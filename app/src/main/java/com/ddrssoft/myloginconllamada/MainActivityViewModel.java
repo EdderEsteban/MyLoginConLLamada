@@ -20,10 +20,10 @@ public class MainActivityViewModel extends AndroidViewModel {
     public void login(String usuario, String password) {
 
         if (usuario.equals("correo@mail.com") && password.equals("123")) {
-            //Intent intent = new Intent(context, MenuLogin.class);
-            //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            //context.startActivity(intent);
-            Toast.makeText(context, "Ingreso al Login", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(context, NavActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+            //Toast.makeText(context, "Ingreso al Login", Toast.LENGTH_SHORT).show();
 
         } else {
             Toast.makeText(context, "Los datos  ingresados son incorrectos", Toast.LENGTH_SHORT).show();
