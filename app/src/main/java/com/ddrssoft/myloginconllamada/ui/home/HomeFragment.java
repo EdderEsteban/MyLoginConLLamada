@@ -27,8 +27,9 @@ public class HomeFragment extends Fragment {
         binding.btnLlamar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String capturaNumero = binding.etNumero.toString();
-                startActivity(vm.telefono(capturaNumero));;
+                String capturaNumero = binding.etNumero.getText().toString();
+                vm.telefono(capturaNumero);
+
             }
         });
 

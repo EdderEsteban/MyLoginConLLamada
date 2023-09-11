@@ -19,7 +19,7 @@ public class MainActivityViewModel extends AndroidViewModel {
 
     public void login(String usuario, String password) {
 
-        if (usuario.equals("correo@mail.com") && password.equals("123")) {
+        if (usuario.equals("usuario") && password.equals("123")) {
             Intent intent = new Intent(context, NavActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);
